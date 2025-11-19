@@ -27,7 +27,7 @@ This system allows users to input their personal, academic, and emergency contac
 
 ---
 
-👩‍💻 ## Author
+👩‍💻 Author
 **Francine Joy D. Mabutin**  
 
 
