@@ -1,5 +1,6 @@
 # Student-Info-System
 Java desktop application for managing student information using JDBC and MySQL.
+
 This system allows users to input their personal, academic, and emergency contact details for students.  
 
 ✨ Features
@@ -26,7 +27,7 @@ This system allows users to input their personal, academic, and emergency contac
 
 ---
 
-## Author
+👩‍💻 ## Author
 **Francine Joy D. Mabutin**  
 
 
