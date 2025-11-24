@@ -19,6 +19,14 @@ This system allows users to input their personal, academic, and emergency contac
 3. Compile and run `StudentInformationSystem.java`.  
 4. Interact with the GUI to input student information.
 
+📝 Notes
+- Future improvements can include **database integration**, **data validation**, and **exporting student records to file**.
+
+---
+
+👩‍💻 Author
+**Francine Joy D. Mabutin**  
+
 ## 🛢️ MySQL Schema
 
 ```sql
