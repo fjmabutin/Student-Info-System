@@ -46,16 +46,3 @@ CREATE TABLE students (
     relationship VARCHAR(50) NOT NULL,
     guardian_contact VARCHAR(50) NOT NULL
 );
-
-
----
-
-📝 Notes
-- Future improvements can include **database integration**, **data validation**, and **exporting student records to file**.
-
----
-
-👩‍💻 Author
-**Francine Joy D. Mabutin**  
-
-
