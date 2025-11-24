@@ -31,6 +31,11 @@ public class StudentInformationSystem extends JFrame implements ActionListener {
     // Buttons and Output
     JButton deleteButton, saveButton, confirmButton;
     JTextArea outputArea;
+    
+    // DATABASE CREDENTIALS
+    private final String DB_URL = ""; //JDBC LOCAL HOST
+    private final String DB_USER = ""; //USERNAME
+    private final String DB_PASSWORD = ""; //PASSWORD
 
     public StudentInformationSystem() {
         setTitle("STUDENT INFORMATION SYSTEM");
@@ -279,3 +284,4 @@ public class StudentInformationSystem extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(() -> new StudentInformationSystem().setVisible(true));
     }
 }
+
