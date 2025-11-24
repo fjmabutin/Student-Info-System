@@ -19,10 +19,38 @@ This system allows users to input their personal, academic, and emergency contac
 3. Compile and run `StudentInformationSystem.java`.  
 4. Interact with the GUI to input student information.
 
+## 🛢️ MySQL Schema
+
+```sql
+CREATE DATABASE IF NOT EXISTS student_system;
+USE student_system;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+
+    full_name VARCHAR(150) NOT NULL,
+    age INT NOT NULL,
+    gender VARCHAR(10) NOT NULL,
+    dob VARCHAR(50) NOT NULL,
+    email VARCHAR(150) NOT NULL,
+    address VARCHAR(255) NOT NULL,
+    contact VARCHAR(50) NOT NULL,
+
+    student_number VARCHAR(50) NOT NULL,
+    enrollment_date VARCHAR(50) NOT NULL,
+    section VARCHAR(50) NOT NULL,
+    school_year VARCHAR(20) NOT NULL,
+    status VARCHAR(20) NOT NULL,
+
+    guardian_name VARCHAR(150) NOT NULL,
+    relationship VARCHAR(50) NOT NULL,
+    guardian_contact VARCHAR(50) NOT NULL
+);
+
+
 ---
 
 📝 Notes
-- This project does "not" yet connect to a database.  
 - Future improvements can include **database integration**, **data validation**, and **exporting student records to file**.
 
 ---
