@@ -279,9 +279,42 @@ public class StudentInformationSystem extends JFrame implements ActionListener {
         );
             outputArea.setText(data);
     }
+ private void saveToDatabase() {
+    String sql = "INSERT INTO students (full_name, age, gender, dob, email, address, contact, " +
+                 "student_number, enrollment_date, section, school_year, status, guardian_name, relationship, guardian_contact) " +
+                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+    try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
+         PreparedStatement stmt = conn.prepareStatement(sql)) {
+
+        stmt.setString(1, fullNameField.getText());
+        stmt.setInt(2, Integer.parseInt(ageField.getText()));
+        stmt.setString(3, (String) genderBox.getSelectedItem());
+        stmt.setString(4, dobField.getText());
+        stmt.setString(5, emailField.getText());
+        stmt.setString(6, addressField.getText());
+        stmt.setString(7, contactField.getText());
+        stmt.setString(8, studentNumberField.getText());
+        stmt.setString(9, enrollmentDateField.getText());
+        stmt.setString(10, sectionField.getText());
+        stmt.setString(11, (String) schoolYearBox.getSelectedItem());
+        stmt.setString(12, (String) statusBox.getSelectedItem());
+        stmt.setString(13, guardianNameField.getText());
+        stmt.setString(14, relationshipField.getText());
+        stmt.setString(15, guardianContactField.getText());
+
+        stmt.executeUpdate();
+        JOptionPane.showMessageDialog(this, "Data saved to database successfully.", "Success", JOptionPane.INFORMATION_MESSAGE);
+
+    } catch (SQLException ex) {
+        JOptionPane.showMessageDialog(this, "Error saving data: " + ex.getMessage(), "Error", JOptionPane.ERROR_MESSAGE);
+        ex.printStackTrace();
+    }
+}
     // MAIN METHOD
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new StudentInformationSystem().setVisible(true));
     }
 }
+
 
