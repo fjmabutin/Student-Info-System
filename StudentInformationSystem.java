@@ -236,12 +236,16 @@ public class StudentInformationSystem extends JFrame implements ActionListener {
     }
     // METHOD FOR BUTTON ACTIONS
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == deleteButton) clearFields();
-        else if (e.getSource() == saveButton) showData();
-        else if (e.getSource() == confirmButton)
-            JOptionPane.showMessageDialog(this, "Data confirmed successfully.", "Confirmation", JOptionPane.INFORMATION_MESSAGE);
-
+    if (e.getSource() == deleteButton) {
+        clearFields();
+    } else if (e.getSource() == saveButton) {
+        showData();
+    } else if (e.getSource() == confirmButton) {
+        System.out.println("Your data is in the database now.");
+        saveToDatabase();
     }
+    }
+    
     // METHOD FOR DELETE BUTTON
     private void clearFields() {
         JTextField[] fields = {
@@ -316,5 +320,6 @@ public class StudentInformationSystem extends JFrame implements ActionListener {
         SwingUtilities.invokeLater(() -> new StudentInformationSystem().setVisible(true));
     }
 }
+
 
 
