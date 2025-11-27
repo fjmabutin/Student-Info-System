@@ -24,7 +24,7 @@ This system allows users to input their personal, academic, and emergency contac
 
 ---
 
-👩‍💻 Author
+Created by: 
 **Francine Joy D. Mabutin**  
 
 ## 🛢️ MySQL Schema
