@@ -1,4 +1,4 @@
- # 💾 **Student Information System**
+ # 💾 **Student Information System with Database Management**
 
 Java desktop application for managing student information using JDBC and MySQL.
 
