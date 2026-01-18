@@ -1,4 +1,4 @@
-# Student-Info-System
+💾 # Student Information System
 Java desktop application for managing student information using JDBC and MySQL.
 
 This system allows users to input their personal, academic, and emergency contact details for students.  
@@ -10,14 +10,13 @@ This system allows users to input their personal, academic, and emergency contac
 - **Buttons:**  
   - **Save:** Review entered information in a text area.  
   - **Delete:** Clear all fields.  
-  - **Confirm:** Save data confirmation popup.  
+  - **Confirm:** Save data confirmation popup and save into database created.  
 - Scrollable GUI for easy navigation.  
 
 🚀 How to Run
 1. Make sure you have **Java JDK** installed.  
 2. Open the project in any Java IDE (e.g., Eclipse, NetBeans, VS Code).  
 3. Compile and run `StudentInformationSystem.java`.  
-4. Interact with the GUI to input student information.
 
 📝 Notes
 - Database; minor refinements and verification steps are pending before full functionality is finalized.
